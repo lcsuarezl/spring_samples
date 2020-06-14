@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  zipkin:
+    enabled: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:hsqldb:mem:test;sql.enforce_size=false
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  liquibase:
+    enabled: false
